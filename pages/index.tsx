@@ -6,6 +6,7 @@ import { Flex } from '@chakra-ui/layout'
 import Head from 'next/head'
 import { useState } from 'react'
 import Reward from 'react-rewards';
+import Link from 'next/link'
 
 export default function Home() {
   const [reward, setReward] = useState(null);
@@ -49,11 +50,11 @@ export default function Home() {
         >
           <Button onClick={rewardClick} borderWidth={1} borderColor="blue.600" borderRadius="full" m={3}><Text fontSize="xl">click</Text></Button>
         </Reward>
-      </Flex>
-      <Flex direction="column" minH="100vh" w="100%" bg="blue.100" align="center" justify="center">
-        <Text as="em" fontSize={["5xl","6xl"]}>Award</Text>
-        <Box m={2}>
-          <Image src="/dadcert.jpeg"></Image>
+      </Flex> 
+      <Flex direction="column" h="100vh" w="100%" bg="#7C7176" color="gray.50" align="center" >
+        <Text as="em" fontSize={["5xl","6xl"]} mt={10}>Award</Text>
+        <Box m="auto" h={["60%","80%"]}>
+          <Image h="100%" src="/dadcert.jpeg"></Image>
         </Box>
       </Flex>
     </Flex> 
